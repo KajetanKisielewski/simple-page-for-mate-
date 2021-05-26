@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <div class="wrap">
+        <header class="header">
+            <div class="header__logo">
+                <img src="./img/logo.png" alt="logo ZibiTop" class="logo__img">
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Strona Główna</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <h1 class="main__heading">
+                <img class="heading__img" src="./img/napis.png" alt="top koszulki">
+            </h1>
+            <div class="main__products">
+                <div class="products__item">
+                    <img src="./img/product1.png" alt="TOP koszulka" class="item__img">
+                </div>
+                <div class="products__info">
+                    <h2 class="products__heading">PERSONALIZOWANA KOSZULKA ZIBI TOP IDEALNA NA EURO</h2>
+                    <p class="products__price">49,99 zł</p>
+                    <ul class="description__list">
+                        <li class="description__item">KOLOR: BIAŁY LUB CZERWONY</li>
+                        <li class="description__item">WŁASNY NADRUK NA PLECACH</li>
+                        <li class="description__item">WłASNY NUMER</li>
+                        <li class="description__item">100% BAWEŁNA</li>
+                    </ul>
+                    <button class="products__button">KUP TERAZ</button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a class="footer__link" href="https://www.facebook.com/ZibiTop1">All right reserved by ZIBI TOP<i class="fab fa-facebook"></i></a>
+        </footer>
+
+        <div class="form__container inactive">
+
+            <div class="form">
+                <h2 class="form__heading">Szczegóły płatności</h2>
+                <form class="form__content">
+
+                    <label class="form__label" for="name">Imię i Nazwisko</label>
+                    <input id="name" name="name" type="text" placeholder="Wpisz swoje Imię i Nazwisko">
+
+                    <label class="form__label" for="mail">Adres e-mail</label>
+                    <input id="mail" name="mail" type="mail" placeholder="Wpisz swój adres e-mail">
+
+                    <label class="form__label" for="phone">Numer Telefonu</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Wpisz swój numer telefonu">
+
+                    <label class="form__label" for="adress">Adres do wysyłki</label>
+                    <input id="adress" name="adress" type="text" placeholder="Ulica">
+                    <input id="adress" name="adress" type="text" placeholder="Numer mieszkania,lokalu,itp.">
+                    <input id="adress" name="adress" type="text" placeholder="Miasto">
+                    <input id="adress" name="adress" type="text" placeholder="Kod pocztowy">
+
+                    <label class="form__label" for="t-back">Napis na koszulce</label>
+                    <input id="t-back" name="t-back" type="text" placeholder="Wpisz co ma się znaleźć na koszulce">
+
+                    <label class="form__label" for="t-number">Numer koszulki</label>
+                    <input id="t-number" name="t-number" type="text"
+                        placeholder="Wpisz numer, który ma się znaleźć na koszulce">
+
+                    <label class="form__label" for="size-select">Wybierz rozmiar koszulki*</label>
+                    <select id="size-select">
+                        <option value="">Wybierz jeden z dostępnych rozmiarów</option>
+                        <option value="xs">XS - szerokość 48, długość 68</option>
+                        <option value="s">S - szerokość 51, długość 70</option>
+                        <option value="m">M - szerokość 53, długość 72</option>
+                        <option value="l">L - szerokość 55, długość 74</option>
+                        <option value="xl">XL - szerokość 58, długość 76</option>
+                        <option value="xxl">XXL - szerokość 60, długość 78</option>
+                        <option value="3xl">3XL- szerokość 65, długość 81</option>
+                    </select>
+
+                    <label class="form__label" for="color-select">Wybierz kolor koszulki*</label>
+                    <select id="color-select">
+                        <option value="">Wybierz jeden z dostępnych kolorów</option>
+                        <option value="white">Biały</option>
+                        <option value="red">Czerwony</option>
+                    </select>
+
+                    <label class="form__label" for="ship-select">Wybierz ksposób dostawy*</label>
+                    <select id="ship-select">
+                        <option value="">Wybierz sposób dostawy</option>
+                        <option value="">Kurier inPost - 11zł</option>
+                        <option value="">Paczkomat inPost - 9zł</option>
+                    </select>
+
+                    <input value="Kupuję" type="submit">
+
+                </form>
+            </div>
+            <div class="info">
+                <div class="info__product">
+                    <img class="info__product--img" src="./img/product1.png" alt="Koszulka Zibi Top">
+                    <p class="info__product--price">Cena: 49,99 zł + przesyłka</p>
+                </div>
+                <div class="info__data">
+                    <div class="info__data--content">
+                        <p class="info__data--description">Dane do przelewu:</p>
+                        <ul class="info__data--list">
+                            <li class="info__data--item"><strong>Imię i Nazwisko:</strong> Rafał Kubaszewski</li>
+                            <li class="info__data--item"><strong>Numer Konta:</strong> 22 4242 4444 2222 1111 4444 2222
+                            </li>
+                            <li class="info__data--item"><strong>Tytuł przelewu</strong>: Twoje imię i nazwisko</li>
+                            <li class="info__data--item"><strong>Kwota:</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="form--close"><i class="fas fa-times"></i></p>
+        </div>
+    </div>
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
