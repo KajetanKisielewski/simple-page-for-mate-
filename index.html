@@ -16,12 +16,21 @@
 
 <body>
 
-
     <div class="wrap">
+
         <header class="header">
-            <div class="header__logo">
+
+
+            <img src="./img/baner1.jpg" alt="Lewandowski razem z Grosickim celebrują strzeloną bramkę"
+                class="header__img img--first">
+            <img src="./img/baner2.jpg" alt="Zbigniew Boniek" class="header__img img--second">
+            <img src="./img/baner3.jpg" alt="Reprezentacja Polski" class="header__img img--third">
+
+            <div class=" header__logo">
                 <img src="./img/logo.png" alt="logo ZibiTop" class="logo__img">
             </div>
+
+
             <nav class="header__nav">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -42,7 +51,7 @@
                     <img src="./img/product1.png" alt="TOP koszulka" class="item__img">
                 </div>
                 <div class="products__info">
-                    <h2 class="products__heading">PERSONALIZOWANA KOSZULKA ZIBI TOP IDEALNA NA EURO</h2>
+                    <h2 class="products__heading">PERSONALIZOWANA KOSZULKA ZIBI TOP </br> IDEALNA NA EURO</h2>
                     <p class="products__price">49,99 zł</p>
                     <ul class="description__list">
                         <li class="description__item">KOLOR: BIAŁY LUB CZERWONY</li>
@@ -55,8 +64,13 @@
             </div>
         </main>
         <footer class="footer">
+            <p class="footer__description description--first">REGULAMIN</p>
+            <p class="footer__description description--second">POLITYKA PRYWATNOŚCI</p>
             <a class="footer__link" href="https://www.facebook.com/ZibiTop1">All right reserved by ZIBI TOP<i class="fab fa-facebook"></i></a>
         </footer>
+
+
+
 
         <div class="form__container inactive">
 
@@ -105,11 +119,12 @@
                         <option value="red">Czerwony</option>
                     </select>
 
-                    <label class="form__label" for="ship-select">Wybierz ksposób dostawy*</label>
+                    <label class="form__label" for="ship-select">Wybierz sposób dostawy*</label>
                     <select id="ship-select">
                         <option value="">Wybierz sposób dostawy</option>
-                        <option value="">Kurier inPost - 11zł</option>
-                        <option value="">Paczkomat inPost - 9zł</option>
+                        <option value="kurier">Kurier inPost - 11zł</option>
+                        <option value="paczkomat">Paczkomat inPost - 9zł</option>
+                        <option value="osobisty">Odbiór osobisty - 0zł</option>
                     </select>
 
                     <input value="Kupuję" type="submit">
@@ -117,29 +132,24 @@
                 </form>
             </div>
             <div class="info">
-                <div class="info__product">
-                    <img class="info__product--img" src="./img/product1.png" alt="Koszulka Zibi Top">
-                    <p class="info__product--price">Cena: 49,99 zł + przesyłka</p>
-                </div>
+                <img class="info__img" src="./img/product1.png" alt="Koszulka Zibi Top">
+                <p class="info__price">Cena: 49,99 zł + przesyłka</p>
                 <div class="info__data">
-                    <div class="info__data--content">
-                        <p class="info__data--description">Dane do przelewu:</p>
-                        <ul class="info__data--list">
-                            <li class="info__data--item"><strong>Imię i Nazwisko:</strong> Rafał Kubaszewski</li>
-                            <li class="info__data--item"><strong>Numer Konta:</strong> 22 4242 4444 2222 1111 4444 2222
-                            </li>
-                            <li class="info__data--item"><strong>Tytuł przelewu</strong>: Twoje imię i nazwisko</li>
-                            <li class="info__data--item"><strong>Kwota:</strong></li>
-                        </ul>
-                    </div>
+                    <p class="info__data--description">Dane do przelewu:</p>
+                    <ul class="info__data--list">
+                        <li class="info__data--item"><strong>Imię i Nazwisko:</strong> Rafał Kubaszewski</li>
+                        <li class="info__data--item"><strong>Numer Konta:</strong> 22 4242 4444 2222 1111 4444 2222
+                        </li>
+                        <li class="info__data--item"><strong>Tytuł przelewu</strong>: Twoje imię i nazwisko</li>
+                        <li class="info__data--item"><strong>Kwota:</strong></li>
+                    </ul>
                 </div>
             </div>
             <p class="form--close"><i class="fas fa-times"></i></p>
         </div>
-    </div>
 
 
-    <script src="./js/app.js"></script>
+        <script src="./js/app.js"></script>
 </body>
 
 </html>
