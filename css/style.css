@@ -354,13 +354,15 @@ input[type="submit"] {
 
 
 
-.form--close {
+.form--close,
+.thanks--close {
     position: fixed;
     top: 5vh;
     right: 5vh;
     font-size: 3rem;
     color: var(--color-alfa);
     cursor: pointer;
+    z-index: 3;
 }
 
 
@@ -377,18 +379,19 @@ input[type="submit"] {
 }
 
 .info__img {
-    width: 100%
+    width: 150%;
 }
 
 .info__price {
-    padding-top: 1rem;
+    margin-top: 2rem;
+    padding: 2rem;
     font-size: 2rem;
     color: var(--color-alfa);
+    background-image: var(--gradient-alfa);
 }
 
 
 .info__data {
-    visibility: hidden;
     background-image: var(--gradient-alfa);
     margin-top: 5rem;
     padding: 2rem 3rem;
@@ -410,6 +413,30 @@ input[type="submit"] {
 .info__data--item {
     font-size: 1.5rem;
     padding-bottom: 1rem;
+}
+
+
+
+/*   podziekowania */
+.thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 8rem 0;
+    background-image: var(--gradient-alfa), url(../img/tlo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.thanks__heading {
+    color: var(--color-alfa);
 }
 
 .inactive {
