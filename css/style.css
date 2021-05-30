@@ -285,7 +285,7 @@
     width: 100%;
     min-height: 100vh;
     padding: 8rem 0;
-    background-image: var(--gradient-alfa), url(/img/tlo.png);
+    background-image: var(--gradient-alfa), url(../img/tlo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

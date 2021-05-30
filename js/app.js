@@ -31,11 +31,3 @@ sendInput.addEventListener('click' , function() {
     infoData.style.visibility="visible";
 })
 
-
-
-const handleSubmit = function(e) {
- e.preventDefault();
-}
-
-form.addEventListener('submit', handleSubmit);
-
