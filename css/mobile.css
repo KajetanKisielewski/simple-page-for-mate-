@@ -294,7 +294,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-image: var(--gradient-alfa), url(../img/tlo.png);
+    background-image: url(../img/tlo.png);
     color: var(--color-alfa);
     overflow: hidden;
 }
@@ -332,7 +332,7 @@
     width: 100%;
     min-height: 100vh;
     padding: 8rem 0;
-    background-image: var(--gradient-alfa), url(../img/tlo.png);
+    background-image: url(../img/tlo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -413,6 +413,7 @@ input[type="submit"] {
     margin-top: 3rem;
     padding: 2rem;
     font-size: 3rem;
+    text-align: center;
     color: var(--color-alfa);
     background-image: var(--gradient-alfa);
 }
@@ -429,7 +430,7 @@ input[type="submit"] {
     width: 100%;
     min-height: 100vh;
     padding: 0 2rem;
-    background-image: var(--gradient-alfa), url(../img/tlo.png);
+    background-image: url(../img/tlo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

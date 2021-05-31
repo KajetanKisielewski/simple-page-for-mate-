@@ -151,6 +151,7 @@
 
 .form__container {
     flex-direction: row;
+    background-image: url(../img/tlo.png)
 }
 
 .form {
@@ -196,6 +197,7 @@ input[type="submit"] {
 .regulations,
 .privacy {
     padding: 0 10rem;
+    background-image: var(--gradient-alfa), url(../img/tlo.png);
 }
 
 .description {
@@ -205,4 +207,8 @@ input[type="submit"] {
 .paragraph,
 .paragraph__details {
     padding: 2rem 5rem;
+}
+
+.thanks {
+    background-image: var(--gradient-alfa), url(../img/tlo.png);
 }
