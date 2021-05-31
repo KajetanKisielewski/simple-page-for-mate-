@@ -199,6 +199,32 @@
     padding: 4rem 0 4rem 4rem;
 }
 
+.item__limited {
+    font-weight: bold;
+    animation: limited 1s linear infinite;
+}
+
+@keyframes limited {
+
+    0% {
+        color: var(--color-beta);
+    }
+
+    20% {
+        color: var(--color-main);
+    }
+
+    80% {
+        color: var(--color-main);
+    }
+
+    100% {
+        color: var(--color-beta);
+    }
+
+}
+
+
 .products__button {
     display: inline-block;
     position: relative;
@@ -229,6 +255,23 @@
     transform: translate(60%, 100%) rotate(-45deg);
 }
 
+.main__description {
+    margin: 0 4rem;
+    padding: 0 2rem 8rem 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.description__distinction {
+    color: var(--color-main);
+    font-weight: bold;
+}
+
+
+
+
+
+/* stopka */
 
 
 .footer {
@@ -352,10 +395,9 @@ input[type="submit"] {
     padding: 1rem 1.5rem;
 }
 
+/* ZAMYKACZ */
 
-
-.form--close,
-.thanks--close {
+.close {
     position: fixed;
     top: 5vh;
     right: 5vh;
@@ -391,44 +433,18 @@ input[type="submit"] {
 }
 
 
-.info__data {
-    background-image: var(--gradient-alfa);
-    margin-top: 5rem;
-    padding: 2rem 3rem;
-    border: 1px solid var(--color-gamma);
-}
-
-.info__data--description {
-    font-size: 2rem;
-    text-align: center;
-    color: var(--color-alfa);
-}
-
-.info__data--list {
-    padding-top: 2rem;
-    list-style: none;
-    color: var(--color-alfa);
-}
-
-.info__data--item {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-}
-
-
 
 /*   podziekowania */
 .thanks {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     min-height: 100vh;
-    padding: 8rem 0;
     background-image: var(--gradient-alfa), url(../img/tlo.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -436,8 +452,87 @@ input[type="submit"] {
 }
 
 .thanks__heading {
+    font-size: 2rem;
+    text-align: center;
     color: var(--color-alfa);
 }
+
+
+.thanks__data {
+    margin-top: 5rem;
+    padding: 3rem 5rem;
+    border: 1px solid var(--color-gamma);
+    background-image: var(--gradient-alfa);
+}
+
+.thanks__data--description {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-alfa);
+}
+
+.thanks__data--list {
+    padding-top: 2rem;
+    list-style: none;
+    color: var(--color-alfa);
+}
+
+.thanks__data--item {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+
+/* Regulamin i polityka */
+
+
+.regulations,
+.privacy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 10rem;
+    background-image: var(--gradient-alfa), url(../img/tlo.png);
+    color: var(--color-alfa);
+}
+
+.regulations__heading,
+.privacy__heading {
+    padding-top: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.description {
+    padding-top: 4rem;
+    font-size: 2rem;
+}
+
+.paragraph,
+.paragraph__details {
+    padding: 2rem 5rem;
+    font-size: 1.5rem;
+}
+
+.paragraph__item,
+.details__item {
+    padding-top: 2rem;
+    list-style: inside;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .inactive {
     display: none;
