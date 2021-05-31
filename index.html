@@ -11,7 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link media="(min-width: 768px)" rel="stylesheet" href="./css/tablet.css">
+    <link media="(min-width: 1200px)" rel="stylesheet" href="./css/desktop.css">
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="./js/id.js" type="text/javascript"></script>
@@ -23,10 +27,7 @@
 <body>
 
     <div class="wrap">
-
         <header class="header">
-
-
             <img src="./img/baner1.jpg" alt="Lewandowski razem z Grosickim celebrują strzeloną bramkę"
                 class="header__img img--first">
             <img src="./img/baner2.jpg" alt="Zbigniew Boniek" class="header__img img--second">
@@ -36,19 +37,24 @@
                 <img src="./img/logo.png" alt="logo ZibiTop" class="logo__img">
             </div>
 
+            <input class="hamburger__toggle" type="checkbox" id="menu-switcher">
+            <label class="nav__hamburger" for="menu-switcher">
+                <span class="hamburger__top"></span>
+                <span class="hamburger__middle"></span>
+                <span class="hamburger__bottom"></span>
+            </label>
+
             <nav class="header__nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="" class="nav__link">Strona Główna</a>
+                        <a href="index.html" class="nav__link">Strona Główna</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Kontakt</a>
+                        <a href="index.html" class="nav__link">Kontakt</a>
                     </li>
                 </ul>
             </nav>
         </header>
-
-
         <main class="main">
             <h1 class="main__heading">
                 <img class="heading__img" src="./img/napis.png" alt="top koszulki">
@@ -65,7 +71,7 @@
                         <li class="description__item">WŁASNY NADRUK NA PLECACH</li>
                         <li class="description__item">WłASNY NUMER</li>
                         <li class="description__item">100% BAWEŁNA</li>
-                        <li class="description__item">TERTMIN REALIZACJI: 3-7dni</li>
+                        <li class="description__item">TERMIN REALIZACJI: 3-7 dni</li>
                         <li class="description__item"><span class="item__limited">EDYCJA LIMITOWANA</span></li>
                     </ul>
                     <button class="products__button">KUP TERAZ</button>
@@ -74,15 +80,15 @@
             <p class="main__description">
                 GDZIE TWOJA <span class="description__distinction">KOSZULKA REPREZENTACJI  POLSKI NA EURO?</span>
                 JESZCZE
-                NIE KUPIŁEŚ/AŚ? </br> JUŻ TERAZ W NASZYM SKLEPIE CZEKA NA CIEBIE KOSZULKA
-                <span class="description__distinction">ZIBI TOP.</span> </br> KOSZULKA KIBICA
-                <span class="description__distinction">ZIBI TOP</span> POZWOLI CI GODNIE
-                <span class="description__distinction">KIBICOWAĆ REPREZENTACJI
+                NIE KUPIŁEŚ/AŚ? </br> JUŻ TERAZ W NASZYM SKLEPIE CZEKA NA CIEBIE
+                <span class="description__distinction">KOSZULKA ZIBI TOP.</span> </br> KOSZULKA KIBICA
+                <span class="description__distinction">ZIBI TOP</span> POZWOLI CI GODNIE KIBICOWAĆ
+                <span class="description__distinction">REPREZENTACJI
             POLSKI NA EURO 2020.</br> POLACY NA EURO 2020</span> MUSZĄ DOJŚĆ DALEKO, A KIBICOWANIE JEST NASZYM
                 OBOWIĄZKIEM.
                 </br>
-                KOSZULKA LEWANDOWSKIEGO ZA 350 ZŁ? </br>JUŻ JEJ NIE POTRZEBUJESZ! ZAMÓW KOSZULKĘ
-                <span class="description__distinction">ZIBI TOP</span> ZA
+                KOSZULKA LEWANDOWSKIEGO ZA 350 ZŁ? </br>JUŻ JEJ NIE POTRZEBUJESZ! ZAMÓW
+                <span class="description__distinction">KOSZULKĘ ZIBI TOP</span> ZA
                 49,99 ZŁ.
             </p>
         </main>
@@ -91,12 +97,8 @@
             <p class="footer__description description--second">POLITYKA PRYWATNOŚCI</p>
             <a class="footer__link" href="https://www.facebook.com/ZibiTop1">All right reserved by ZIBI TOP<i class="fab fa-facebook"></i></a>
         </footer>
-
-
-
         <div class="regulations inactive">
             <h2 class="regulations__heading">Regulamin</h2>
-
             <p class="description regulations__description">§ 1 Postanowienia ogólne</p>
             <ul class="paragraph regulations__paragraph">
                 <li class="paragraph__item">
@@ -109,7 +111,8 @@
                     Kontakt ze Sprzedawcą odbywa się poprzez:
                     <ul class="paragraph__details">
                         <li class="details__item">
-                            Adres poczty elektronicznej: <strong>zibitopshop@gmail.com</strong>
+                            Adres poczty elektronicznej:
+                             <strong>zibitopshop@gmail.com</strong>
                         </li>
                         <li class="details__item">
                             Adres Sprzedawcy: Rafał Kubaszewski, Eustachego Tyszkiewicza 13/38 01-157
@@ -501,12 +504,12 @@
             </ul>
             <p class="close regulations--close"><i class="fas fa-times"></i></p>
         </div>
-
         <div class="privacy inactive">
             <h2 class="privacy__heading">Polityka prywatności</h2>
             <p class="description privacy__description">Administrator Danych</p>
             <ul class="paragraph privacy__paragraph">
-                <li class="paragraph_item">Administratorem strony i danych osobowych przekazywanych w jej ramach
+                <li class="paragraph_item">
+                    Administratorem strony i danych osobowych przekazywanych w jej ramach
                     jest Rafał Kubaszewski, prowadzący działalność nierejestrowaną pod adresem: ul. Eustachego
                     Tyszkiewicza 13/38 01-157 Warszawa, adres e-mail: zibitopshop@gmail.com
                 </li>
@@ -598,10 +601,7 @@
             </ul>
             <p class="close privacy--close"><i class="fas fa-times"></i></p>
         </div>
-
-
         <div class="form__container inactive">
-
             <div class="form">
                 <h2 class=" form__heading">Szczegóły płatności</h2>
 
@@ -664,14 +664,12 @@
                     <input value="Kupuję" type="submit">
                 </form>
             </div>
-
             <div class="info">
                 <img class="info__img" src="./img/product1.png" alt="Koszulka Zibi Top">
                 <p class="info__price">Cena: 49,99 zł + przesyłka</p>
             </div>
             <p class="close form--close"><i class="fas fa-times"></i></p>
         </div>
-
         <div class="thanks inactive">
             <h2 class="thanks__heading">Dziękujemy za zakup! Na Twój email wysłaliśmy dane do przelewu, znajdziesz je
                 również poniżej.</h2>
@@ -679,7 +677,7 @@
                 <p class="thanks__data--description">Dane do przelewu:</p>
                 <ul class="thanks__data--list">
                     <li class="thanks__data--item"><strong>Imię i Nazwisko: Rafał Kubaszewski </strong></li>
-                    <li class="thanks__data--item"><strong>Numer Konta: 22 4242 4444 2222 1111 4444 2222</strong>
+                    <li class="thanks__data--item"><strong>Numer Konta: 62 1160 2202 0000 0004 7989 6809</strong>
                     </li>
                     <li class="thanks__data--item"><strong>Tytuł przelewu: <span class="data__title"></strong></span>
                     </li>

@@ -86,7 +86,6 @@ document.querySelector('.description--second').addEventListener('click' , functi
 
 
 
-
 // Wyświetlanie ceny końcowej
 function setPrice(selectedShip) {
 

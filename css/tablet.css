@@ -1,0 +1,37 @@
+.header {
+    height: 50vh;
+}
+
+.header__logo {
+    top: 5vh;
+    width: 30%;
+}
+
+.nav__hamburger {
+    top: 5vh;
+    right: 5vh;
+    width: 8rem;
+}
+
+.hamburger__top,
+.hamburger__middle,
+.hamburger__bottom {
+    height: 8px;
+}
+
+.hamburger__toggle:checked~.nav__hamburger .hamburger__bottom {
+    transform: translate(12px, -12px) rotate(45deg);
+}
+
+.nav__link {
+    font-size: 4rem;
+}
+
+.thanks__data {
+    padding: 3rem 5rem;
+}
+
+.close {
+    top: 5vh;
+    right: 5vh;
+}

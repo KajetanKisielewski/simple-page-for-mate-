@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+    --color-main: rgb(223, 59, 49);
+    --color-main-opacity: rgba(223, 59, 49, 0.8);
+    --color-alfa: rgb(255, 255, 255);
+    --color-beta: rgb(0, 0, 0);
+    --color-gamma: rgb(84, 165, 218);
+
+    --gradient-alfa: linear-gradient(90deg, rgba(73, 73, 73, 0.3) 0%, rgba(13, 13, 13, 0.5) 100%);
+}
+
+
+.wrap {
+    position: relative;
+    max-width: 1900px;
+    margin: 0 auto;
+}
