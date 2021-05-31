@@ -151,7 +151,7 @@
 
 .form__container {
     flex-direction: row;
-    background-image: url(../img/tlo.png)
+    background-image: var(--gradient-alfa), url(../img/tlo.png);
 }
 
 .form {
