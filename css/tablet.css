@@ -40,6 +40,17 @@ input[type="checkbox"] {
     padding: 3rem 5rem;
 }
 
+
+
+
+.contact__info {
+    flex-direction: row;
+}
+
+.contact__info-description {
+    margin: 0 2rem;
+}
+
 .close {
     top: 5vh;
     right: 5vh;

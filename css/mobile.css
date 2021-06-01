@@ -372,7 +372,8 @@
 
 
 input,
-select {
+select,
+textarea {
     display: block;
     width: 100%;
     padding: 1rem 0.5rem;
@@ -493,6 +494,48 @@ input[type="checkbox"] {
 }
 
 
+
+.contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 10rem 0;
+    background-image: url(../img/tlo.png);
+}
+
+.contact__form--second {
+    width: 70%;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    color: var(--color-alfa);
+}
+
+.contact__info-description {
+    margin: 1rem 0;
+}
+
+
+.contact__info-description a {
+    color: var(--color-alfa);
+}
+
+
+
+
+
+
 .close {
     position: fixed;
     top: 3vh;
@@ -502,7 +545,6 @@ input[type="checkbox"] {
     cursor: pointer;
     z-index: 3;
 }
-
 
 .inactive {
     display: none;

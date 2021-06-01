@@ -49,7 +49,7 @@
                         <a href="index.html" class="nav__link">Strona Główna</a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Kontakt</a>
+                        <a href="#" class="nav__link nav__link--contact">Kontakt</a>
                     </li>
                 </ul>
             </nav>
@@ -605,8 +605,6 @@
         <div class="form__container inactive">
             <div class="form">
                 <h2 class=" form__heading">Szczegóły płatności</h2>
-
-
                 <form id="contact-form" class="form__content">
 
                     <input type="hidden" name="contact_number">
@@ -617,7 +615,7 @@
                     <label class="form__label" for="email">Adres e-mail*</label>
                     <input id="email" name="user_email" type="email" placeholder="Wpisz swój adres e-mail" required>
 
-                    <label class="form__label" for="phone">Numer Telefonu</label>
+                    <label class="form__label" for="phone">Numer Telefonu*</label>
                     <input id="phone" name="user_phone" type="tel" placeholder="Wpisz swój numer telefonu" required>
 
                     <label class="form__label" for="adress">Adres do wysyłki*</label>
@@ -690,6 +688,36 @@
                 </ul>
             </div>
             <p class="close thanks--close"><i class="fas fa-times"></i></p>
+        </div>
+        <div class="contact inactive">
+            <div class="contact__form contact__form--second">
+                <h2 class="form__heading">Kontakt</h2>
+                <div class="contact__info">
+                    <p class="contact__info-description">Adres e-mail: zibitopshop@gmail.com</p>
+                    <p class="contact__info-description"><a href="tel:+48502383849">Tel. 502-383-849</a></p>
+                    <p class="contact__info-description"><a href="https://www.facebook.com/ZibiTop1/">Facebook</a></p>
+                </div>
+                <form id="contact-form--second" class="form__content">
+
+                    <label for="user_name-contact" class="form__label">Imię i Nazwisko*</label>
+                    <input id="user_name-contact" name="user_name-contact" type="text"
+                        placeholder="Wpisz imię i nazwisko" required>
+
+                    <label for="user_email-contact" class="form__label">Adres e-mail*</label>
+                    <input id="user_email-contact" name="user_email-contact" type="email"
+                        placeholder="Wpisz swój adres e-mail" required>
+
+                    <label for="user_subject-contact" class="form__label">Temat*</label>
+                    <input id="user_subject-contact" name="user_subject-contact" type="text"
+                        placeholder="Podaj temat wiadomości" required>
+
+                    <label for="user_subject-textarea" class="form__label">Treść wiadomości*</label>
+                    <textarea name="user_subject-textarea" id="" cols="30" rows="10" required></textarea>
+
+                    <input class="contact__send" value="Wyślij" type="submit">
+                </form>
+            </div>
+            <p class="close contact--close"><i class="fas fa-times"></i></p>
         </div>
     </div>
 

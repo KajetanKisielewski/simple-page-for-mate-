@@ -8,6 +8,7 @@ const form = document.querySelector('.form__container');
 const thanks = document.querySelector('.thanks');
 const regulations = document.querySelector('.regulations');
 const privacy = document.querySelector('.privacy');
+const contact = document.querySelector('.contact');
 
 
 const close = document.querySelectorAll('.close');
@@ -29,6 +30,7 @@ const active = function() {
     thanks.classList.add('inactive');
     regulations.classList.add('inactive')
     privacy.classList.add('inactive');
+    contact.classList.add('inactive');
     window.scrollTo(0, 0);
 }
 
@@ -56,6 +58,14 @@ document.querySelector('.description--second').addEventListener('click' , functi
     window.scrollTo(0, 0);
 })
 
+
+document.querySelector('.nav__link--contact').addEventListener('click' , function() {
+    header.classList.add('inactive')
+    main.classList.add('inactive')
+    footer.classList.add('inactive')
+    contact.classList.remove('inactive')
+    window.scrollTo(0, 0);
+})
 
 
 
