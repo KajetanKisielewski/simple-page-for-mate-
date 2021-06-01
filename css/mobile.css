@@ -311,6 +311,10 @@
     font-size: 2rem;
 }
 
+.description--last {
+    padding: 4rem 2rem 4rem 2rem;
+}
+
 .paragraph,
 .paragraph__details {
     padding: 2rem 2rem;
@@ -494,7 +498,6 @@ input[type="checkbox"] {
 .inactive {
     display: none;
 }
-
 
 
 ::-webkit-scrollbar {
