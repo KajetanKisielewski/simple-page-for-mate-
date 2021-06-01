@@ -27,6 +27,15 @@
     font-size: 4rem;
 }
 
+.main__description {
+    font-size: 1.5rem;
+}
+
+input[type="checkbox"] {
+    bottom: 12%;
+    left: 1%;
+}
+
 .thanks__data {
     padding: 3rem 5rem;
 }

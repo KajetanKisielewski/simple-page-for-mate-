@@ -244,8 +244,8 @@
 }
 
 .main__description {
-    padding: 0 1rem 4rem 1rem;
-    font-size: 2rem;
+    padding: 0 2rem 4rem 2rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -357,6 +357,7 @@
 
 
 .form__content {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     padding: 2rem;
@@ -406,9 +407,17 @@ input[type="submit"] {
 }
 
 input[type="checkbox"] {
-    position: relative;
-    top: 25px;
-    left: -48%;
+    position: absolute;
+    bottom: 13%;
+    left: 5%;
+    width: 5%;
+}
+
+@media (min-width: 460px) {
+    input[type="checkbox"] {
+        bottom: 12%;
+        left: 3%;
+    }
 }
 
 

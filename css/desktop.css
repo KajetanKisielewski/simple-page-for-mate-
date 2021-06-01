@@ -177,6 +177,12 @@ input[type="submit"] {
 }
 
 
+input[type="checkbox"] {
+    bottom: 10%;
+    left: 3%;
+}
+
+
 .info {
     position: fixed;
     top: 50%;
@@ -199,6 +205,10 @@ input[type="submit"] {
 .privacy {
     padding: 0 10rem;
     background-image: var(--gradient-alfa), url(../img/tlo.png);
+}
+
+.main__description {
+    font-size: 2rem;
 }
 
 .description {
