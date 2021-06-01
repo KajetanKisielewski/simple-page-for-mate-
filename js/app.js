@@ -13,7 +13,6 @@ const privacy = document.querySelector('.privacy');
 const close = document.querySelectorAll('.close');
 
 
-
 const inactive = function() {
     header.classList.add('inactive')
     main.classList.add('inactive')
@@ -56,6 +55,10 @@ document.querySelector('.description--second').addEventListener('click' , functi
     document.querySelector('.privacy').classList.remove('inactive')
     window.scrollTo(0, 0);
 })
+
+
+
+
 
 
 
